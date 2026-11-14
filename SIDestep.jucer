@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<JUCERPROJECT id="t7NArW" name="SIDStep2" projectType="audioplug" version="1.0.0"
-              bundleIdentifier="com.BAS.SIDStep2" includeBinaryInAppConfig="1"
+<JUCERPROJECT id="t7NArW" name="SIDestep" projectType="audioplug" version="1.0.0"
+              bundleIdentifier="com.BAS.SIDestep" includeBinaryInAppConfig="1"
               buildVST="1" buildVST3="0" buildAU="0" buildAUv3="0" buildRTAS="0"
-              buildAAX="0" pluginName="SIDStep2" pluginDesc="SIDStep2" pluginManufacturer="BAS"
+              buildAAX="0" pluginName="SIDestep" pluginDesc="SIDestep" pluginManufacturer="BAS"
               pluginManufacturerCode="BAS_" pluginCode="SDST" pluginChannelConfigs="{0, 1}"
               pluginIsSynth="1" pluginWantsMidiIn="1" pluginProducesMidiOut="0"
-              pluginIsMidiEffectPlugin="0" pluginEditorRequiresKeys="0" pluginAUExportPrefix="SIDStep2AU"
-              pluginRTASCategory="" aaxIdentifier="com.yourcompany.SIDStep2"
+              pluginIsMidiEffectPlugin="0" pluginEditorRequiresKeys="0" pluginAUExportPrefix="SIDestepAU"
+              pluginRTASCategory="" aaxIdentifier="com.yourcompany.SIDestep"
               pluginAAXCategory="2" pluginFormats="buildVST" pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn"
               displaySplashScreen="1" jucerFormatVersion="1">
-  <MAINGROUP id="pUQeKF" name="SIDStep2">
+  <MAINGROUP id="pUQeKF" name="SIDestep">
     <GROUP id="{233056E4-712F-D77C-4F88-AA92D07486A2}" name="reSID">
       <FILE id="E0ld18" name="envelope.cc" compile="1" resource="0" file="Requirements/resid-0.16/envelope.cc"/>
       <FILE id="CMS5F7" name="envelope.h" compile="0" resource="0" file="Requirements/resid-0.16/envelope.h"/>
@@ -426,10 +426,10 @@
               file="Source/UI/SavePatchAsDialog.cpp"/>
         <FILE id="uqwPeg" name="SavePatchAsDialog.h" compile="0" resource="0"
               file="Source/UI/SavePatchAsDialog.h"/>
-        <FILE id="rrRAJ2" name="SIDStepLookAndFeel.cpp" compile="1" resource="0"
-              file="Source/UI/SIDStepLookAndFeel.cpp"/>
-        <FILE id="jOgsfU" name="SIDStepLookAndFeel.h" compile="0" resource="0"
-              file="Source/UI/SIDStepLookAndFeel.h"/>
+        <FILE id="rrRAJ2" name="SIDestepLookAndFeel.cpp" compile="1" resource="0"
+              file="Source/UI/SIDestepLookAndFeel.cpp"/>
+        <FILE id="jOgsfU" name="SIDestepLookAndFeel.h" compile="0" resource="0"
+              file="Source/UI/SIDestepLookAndFeel.h"/>
         <FILE id="oqdmrz" name="WaveformView.cpp" compile="1" resource="0"
               file="Source/UI/WaveformView.cpp"/>
         <FILE id="QH4uJf" name="WaveformView.h" compile="0" resource="0" file="Source/UI/WaveformView.h"/>
@@ -448,8 +448,8 @@
         <FILE id="EsI4gw" name="WavetableView.h" compile="0" resource="0" file="Source/UI/WavetableView.h"/>
       </GROUP>
       <FILE id="r4G1Ph" name="Note.h" compile="0" resource="0" file="Source/Note.h"/>
-      <FILE id="GtakIb" name="SIDStep2.cpp" compile="1" resource="0" file="Source/SIDStep2.cpp"/>
-      <FILE id="pcWQT9" name="SIDStep2.h" compile="0" resource="0" file="Source/SIDStep2.h"/>
+      <FILE id="GtakIb" name="SIDestep.cpp" compile="1" resource="0" file="Source/SIDestep.cpp"/>
+      <FILE id="pcWQT9" name="SIDestep.h" compile="0" resource="0" file="Source/SIDestep.h"/>
       <FILE id="vWjUet" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
       <FILE id="nOjoIn" name="PluginProcessor.h" compile="0" resource="0"

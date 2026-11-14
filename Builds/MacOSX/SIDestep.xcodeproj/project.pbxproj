@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		3A6EC6C2E4E52E3502E8BBA4 /* SIDStep2 - All */ = {
+		3A6EC6C2E4E52E3502E8BBA4 /* SIDestep - All */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = F571B6D4D802D9C7BFBFD0C4;
 			buildPhases = (
@@ -16,8 +16,8 @@
 				435A1B32611F8581A9185D18,
 				CCD1BAA1A43A4106ED61BE6C,
 			);
-			name = "SIDStep2 - All";
-			productName = SIDStep2;
+			name = "SIDestep - All";
+			productName = SIDestep;
 		};
 /* End PBXAggregateTarget section */
 
@@ -80,7 +80,7 @@
 		7AC88C21B6A5FB53345E1598 /* ArpRow.cpp */ = {isa = PBXBuildFile; fileRef = B421202433C3595AA71D9874; };
 		80A47822CB3FA4B0659A3871 /* Carbon.framework */ = {isa = PBXBuildFile; fileRef = F6719112F14410796B075C20; };
 		888DFFF594436E640BA4948E /* sid.cc */ = {isa = PBXBuildFile; fileRef = 6DD4FBE88A0B1DF3A584AB88; };
-		8977528BC59D2F5D6457293E /* SIDStep2.cpp */ = {isa = PBXBuildFile; fileRef = 79BB3A22FF86E84104380FDB; };
+		8977528BC59D2F5D6457293E /* SIDestep.cpp */ = {isa = PBXBuildFile; fileRef = 79BB3A22FF86E84104380FDB; };
 		8A8A970466098BED3B66929C /* PatchRow.cpp */ = {isa = PBXBuildFile; fileRef = 171FBC4D89A1FC660813A28B; };
 		8AB37545C629CC40CA071CAC /* Patches.cpp */ = {isa = PBXBuildFile; fileRef = 86200FD38DABA6293D92CE55; };
 		8E03AF1D0AD315E9854DA11A /* PatchEditor.cpp */ = {isa = PBXBuildFile; fileRef = 94DDAA6BE25EDD5287F8F676; };
@@ -106,7 +106,7 @@
 		D202C23685204D1846997633 /* WavetableRow.cpp */ = {isa = PBXBuildFile; fileRef = 37A8A2EFCCD1291710533372; };
 		D39B787CA24ADC49A58A98C4 /* wave8580__ST.cc */ = {isa = PBXBuildFile; fileRef = 3B7C28717611AA1CC76E6586; };
 		D5805B71DCE033159D397CA4 /* include_juce_audio_plugin_client_utils.cpp */ = {isa = PBXBuildFile; fileRef = 392C9458F402FA40482B9498; };
-		D79C476327E2BBFFE234999E /* SIDStepLookAndFeel.cpp */ = {isa = PBXBuildFile; fileRef = A40BF0FE21BCBDFE5E0F6C73; };
+		D79C476327E2BBFFE234999E /* SIDestepLookAndFeel.cpp */ = {isa = PBXBuildFile; fileRef = A40BF0FE21BCBDFE5E0F6C73; };
 		D8C7EFE671B16DD36B86CC95 /* ExportManager.cpp */ = {isa = PBXBuildFile; fileRef = B1EF04F1D900E084669752C7; };
 		D8D59CAEB0C395D9E3576D96 /* wave8580_P_T.cc */ = {isa = PBXBuildFile; fileRef = B3349EBA6115ADD2B17DA8C9; };
 		DEE39644BBDB77A2B3AC5F6C /* PulseTableView.cpp */ = {isa = PBXBuildFile; fileRef = 39899F72945AACB64261366D; };
@@ -219,9 +219,9 @@
 		4CAB21175BB07FD9F5B3E0C1 /* SIDRegisters.h */ /* SIDRegisters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SIDRegisters.h; path = ../../Source/SIDRegisters.h; sourceTree = SOURCE_ROOT; };
 		4CB97644B64384074FD0C3DB /* extfilt.cc */ /* extfilt.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = extfilt.cc; path = "../../Requirements/resid-0.16/extfilt.cc"; sourceTree = SOURCE_ROOT; };
 		4CE7770D0C2B6CAB4968D942 /* BandPassParameterChanged.h */ /* BandPassParameterChanged.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BandPassParameterChanged.h; path = ../../Source/Listeners/Parameters/BandPassParameterChanged.h; sourceTree = SOURCE_ROOT; };
-		4D25F6D7AAA74D30FDF0EB88 /* SIDStep2.h */ /* SIDStep2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SIDStep2.h; path = ../../Source/SIDStep2.h; sourceTree = SOURCE_ROOT; };
+		4D25F6D7AAA74D30FDF0EB88 /* SIDestep.h */ /* SIDestep.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SIDestep.h; path = ../../Source/SIDestep.h; sourceTree = SOURCE_ROOT; };
 		4E00D6448052476EDF417E2C /* HighPassParameterChanged.h */ /* HighPassParameterChanged.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HighPassParameterChanged.h; path = ../../Source/Listeners/Parameters/HighPassParameterChanged.h; sourceTree = SOURCE_ROOT; };
-		4E11321D71301F874FFE94D1 /* VST */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SIDStep2.vst; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E11321D71301F874FFE94D1 /* VST */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SIDestep.vst; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E93C7FE595F6C23BAD6819E /* PluginProcessor.h */ /* PluginProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PluginProcessor.h; path = ../../Source/PluginProcessor.h; sourceTree = SOURCE_ROOT; };
 		4FAD573775B767572E8A9459 /* LivePatchEditorModeClicked.h */ /* LivePatchEditorModeClicked.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LivePatchEditorModeClicked.h; path = ../../Source/Listeners/Live/LivePatchEditorModeClicked.h; sourceTree = SOURCE_ROOT; };
 		5022BF6713AC9F0A0F2A53C9 /* juce_data_structures */ /* juce_data_structures */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_data_structures; path = ../../JuceLibraryCode/modules/juce_data_structures; sourceTree = SOURCE_ROOT; };
@@ -247,7 +247,7 @@
 		5AEC64387A34775BF891AD03 /* Recorder.h */ /* Recorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Recorder.h; path = ../../Source/Recorder.h; sourceTree = SOURCE_ROOT; };
 		5B29AB143C8B7AB0F905D1F5 /* ExportPulseWIdthChanged.h */ /* ExportPulseWIdthChanged.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ExportPulseWIdthChanged.h; path = ../../Source/Listeners/Export/ExportPulseWIdthChanged.h; sourceTree = SOURCE_ROOT; };
 		5CE99B4710F7CB7690F30BE3 /* AttackParameterChanged.h */ /* AttackParameterChanged.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AttackParameterChanged.h; path = ../../Source/Listeners/Parameters/AttackParameterChanged.h; sourceTree = SOURCE_ROOT; };
-		5CF488BB77F1236295688B89 /* SIDStepLookAndFeel.h */ /* SIDStepLookAndFeel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SIDStepLookAndFeel.h; path = ../../Source/UI/SIDStepLookAndFeel.h; sourceTree = SOURCE_ROOT; };
+		5CF488BB77F1236295688B89 /* SIDestepLookAndFeel.h */ /* SIDestepLookAndFeel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SIDestepLookAndFeel.h; path = ../../Source/UI/SIDestepLookAndFeel.h; sourceTree = SOURCE_ROOT; };
 		5D36BB7D34EF9E628C4DC9B4 /* AbstractNoteTableRow.cpp */ /* AbstractNoteTableRow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AbstractNoteTableRow.cpp; path = ../../Source/UI/AbstractNoteTableRow.cpp; sourceTree = SOURCE_ROOT; };
 		5D36E7E8F63168AC3FAD74DC /* Tremolo.h */ /* Tremolo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Tremolo.h; path = ../../Source/Programs/Tremolo.h; sourceTree = SOURCE_ROOT; };
 		6032F4BBBC0DC879FC64CCB7 /* SharedProperties.h */ /* SharedProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SharedProperties.h; path = ../../Source/SharedProperties.h; sourceTree = SOURCE_ROOT; };
@@ -275,7 +275,7 @@
 		784B14FBF385C3C763A51D50 /* commands.txt */ /* commands.txt */ = {isa = PBXFileReference; lastKnownFileType = text.txt; name = commands.txt; path = ../../commands.txt; sourceTree = SOURCE_ROOT; };
 		787502EE713B6062C834F950 /* include_juce_gui_basics.mm */ /* include_juce_gui_basics.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_gui_basics.mm; path = ../../JuceLibraryCode/include_juce_gui_basics.mm; sourceTree = SOURCE_ROOT; };
 		7939FB954B4F1FD5459862E2 /* LiveTremoloAmountChanged.h */ /* LiveTremoloAmountChanged.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LiveTremoloAmountChanged.h; path = ../../Source/Listeners/Live/LiveTremoloAmountChanged.h; sourceTree = SOURCE_ROOT; };
-		79BB3A22FF86E84104380FDB /* SIDStep2.cpp */ /* SIDStep2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SIDStep2.cpp; path = ../../Source/SIDStep2.cpp; sourceTree = SOURCE_ROOT; };
+		79BB3A22FF86E84104380FDB /* SIDestep.cpp */ /* SIDestep.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SIDestep.cpp; path = ../../Source/SIDestep.cpp; sourceTree = SOURCE_ROOT; };
 		7B44CF626273AA97CDF48AEC /* PatchEditorVibratoDefaultSpeedChanged.h */ /* PatchEditorVibratoDefaultSpeedChanged.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PatchEditorVibratoDefaultSpeedChanged.h; path = "../../Source/Listeners/Patch Editor/PatchEditorVibratoDefaultSpeedChanged.h"; sourceTree = SOURCE_ROOT; };
 		7CABE0A1030540700514EAA8 /* ExportVibratoAmountChanged.h */ /* ExportVibratoAmountChanged.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ExportVibratoAmountChanged.h; path = ../../Source/Listeners/Export/ExportVibratoAmountChanged.h; sourceTree = SOURCE_ROOT; };
 		7E0C4E9D55DB0FE18B8C422E /* PatchEditorPitchBendRangeChanged.h */ /* PatchEditorPitchBendRangeChanged.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PatchEditorPitchBendRangeChanged.h; path = "../../Source/Listeners/Patch Editor/PatchEditorPitchBendRangeChanged.h"; sourceTree = SOURCE_ROOT; };
@@ -295,7 +295,7 @@
 		83E8D85EB2FB774E7E221867 /* Command.h */ /* Command.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Command.h; path = ../../Source/Command.h; sourceTree = SOURCE_ROOT; };
 		83FB26C71C94BC4C6514BB1E /* PatchRow.h */ /* PatchRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PatchRow.h; path = ../../Source/UI/PatchRow.h; sourceTree = SOURCE_ROOT; };
 		84193A5CF49F440DA37041AF /* juce_graphics */ /* juce_graphics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_graphics; path = ../../JuceLibraryCode/modules/juce_graphics; sourceTree = SOURCE_ROOT; };
-		848E306359F8208B4034BE9B /* Shared Code */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSIDStep2.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		848E306359F8208B4034BE9B /* Shared Code */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSIDestep.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A9FDA6D9F3848412095520 /* voice.h */ /* voice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = voice.h; path = "../../Requirements/resid-0.16/voice.h"; sourceTree = SOURCE_ROOT; };
 		850A8739993E9CD90F5AB50B /* LowPassParameterChanged.h */ /* LowPassParameterChanged.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LowPassParameterChanged.h; path = ../../Source/Listeners/Parameters/LowPassParameterChanged.h; sourceTree = SOURCE_ROOT; };
 		85B67B3FB137915C070896A1 /* PluginEditor.h */ /* PluginEditor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PluginEditor.h; path = ../../Source/PluginEditor.h; sourceTree = SOURCE_ROOT; };
@@ -331,7 +331,7 @@
 		9F97F4501E5437D090F1DEF3 /* WavetableCommandRow.cpp */ /* WavetableCommandRow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = WavetableCommandRow.cpp; path = ../../Source/UI/WavetableCommandRow.cpp; sourceTree = SOURCE_ROOT; };
 		A190F64380DB815F19F0E0A5 /* include_juce_audio_plugin_client_VST2.cpp */ /* include_juce_audio_plugin_client_VST2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_audio_plugin_client_VST2.cpp; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_VST2.cpp; sourceTree = SOURCE_ROOT; };
 		A22354F1F5600BECDD96CD37 /* Exporter.cpp */ /* Exporter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Exporter.cpp; path = ../../Source/Exporter.cpp; sourceTree = SOURCE_ROOT; };
-		A40BF0FE21BCBDFE5E0F6C73 /* SIDStepLookAndFeel.cpp */ /* SIDStepLookAndFeel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SIDStepLookAndFeel.cpp; path = ../../Source/UI/SIDStepLookAndFeel.cpp; sourceTree = SOURCE_ROOT; };
+		A40BF0FE21BCBDFE5E0F6C73 /* SIDestepLookAndFeel.cpp */ /* SIDestepLookAndFeel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SIDestepLookAndFeel.cpp; path = ../../Source/UI/SIDestepLookAndFeel.cpp; sourceTree = SOURCE_ROOT; };
 		A48DE605BE9A6E319B96E9BA /* Exporter.h */ /* Exporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Exporter.h; path = ../../Source/Exporter.h; sourceTree = SOURCE_ROOT; };
 		A4A8C92E1F2A70DB8EAE71D6 /* wave6581_P_T.cc */ /* wave6581_P_T.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = wave6581_P_T.cc; path = "../../Requirements/resid-0.16/wave6581_P_T.cc"; sourceTree = SOURCE_ROOT; };
 		A5A3318F6728DA412E4DA59D /* PatchEditorTremoloDefaultSpeedChanged.h */ /* PatchEditorTremoloDefaultSpeedChanged.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PatchEditorTremoloDefaultSpeedChanged.h; path = "../../Source/Listeners/Patch Editor/PatchEditorTremoloDefaultSpeedChanged.h"; sourceTree = SOURCE_ROOT; };
@@ -465,14 +465,14 @@
 			name = Parameters;
 			sourceTree = "<group>";
 		};
-		130B97AE02105D73DF3EF85B /* SIDStep2 */ = {
+		130B97AE02105D73DF3EF85B /* SIDestep */ = {
 			isa = PBXGroup;
 			children = (
 				E451110F15FE62BFDAA67317,
 				DAD277DEB15073980948D326,
 				72C029B70C886DE1C654C4F0,
 			);
-			name = SIDStep2;
+			name = SIDestep;
 			sourceTree = "<group>";
 		};
 		1571E05CA09873382361BF80 /* JUCE Library Code */ = {
@@ -908,7 +908,7 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A302D16E40CFDCBD97259FB7 /* SIDStep2 - VST */ = {
+		A302D16E40CFDCBD97259FB7 /* SIDestep - VST */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66BE2CA7CD5E27A34AB32EA3;
 			buildPhases = (
@@ -921,12 +921,12 @@
 			dependencies = (
 				650F88DD43A0275DABB53FF9,
 			);
-			name = "SIDStep2 - VST";
-			productName = SIDStep2;
+			name = "SIDestep - VST";
+			productName = SIDestep;
 			productReference = 4E11321D71301F874FFE94D1;
 			productType = "com.apple.product-type.bundle";
 		};
-		C8D1BAF1D0B32A4F772FF2E3 /* SIDStep2 - Shared Code */ = {
+		C8D1BAF1D0B32A4F772FF2E3 /* SIDestep - Shared Code */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 388DBFB95F89EB400BC51207;
 			buildPhases = (
@@ -936,8 +936,8 @@
 			);
 			dependencies = (
 			);
-			name = "SIDStep2 - Shared Code";
-			productName = SIDStep2;
+			name = "SIDestep - Shared Code";
+			productName = SIDestep;
 			productReference = 848E306359F8208B4034BE9B;
 			productType = "com.apple.product-type.library.static";
 		};
@@ -1209,7 +1209,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "SIDStep2";
+				PRODUCT_NAME = "SIDestep";
 				SDKROOT = macosx;
 				WARNING_CFLAGS = "-Wreorder";
 				ZERO_LINK = NO;
@@ -1258,11 +1258,11 @@
 				INFOPLIST_PREPROCESS = NO;
 				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/VST/";
 				LIBRARY_STYLE = Bundle;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../JuceLibraryCode/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode $(SRCROOT)/../../JuceLibraryCode/modules $(SRCROOT)/../../JuceLibraryCode/modules/juce_audio_plugin_client";
-				OTHER_LDFLAGS = "-bundle -lSIDStep2";
-				PRODUCT_BUNDLE_IDENTIFIER = com.BAS.SIDStep2;
-				PRODUCT_NAME = "SIDStep2";
+				OTHER_LDFLAGS = "-bundle -lSIDestep";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BAS.SIDestep;
+				PRODUCT_NAME = "SIDestep";
 				USE_HEADERMAP = NO;
 				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
 				WRAPPER_EXTENSION = vst;
@@ -1306,10 +1306,10 @@
 					"$(inherited)",
 				);
 				INSTALL_PATH = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../JuceLibraryCode/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode $(SRCROOT)/../../JuceLibraryCode/modules $(SRCROOT)/../../JuceLibraryCode/modules/juce_audio_plugin_client";
-				PRODUCT_BUNDLE_IDENTIFIER = com.BAS.SIDStep2;
-				PRODUCT_NAME = "SIDStep2";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BAS.SIDestep;
+				PRODUCT_NAME = "SIDestep";
 				SKIP_INSTALL = YES;
 				USE_HEADERMAP = NO;
 				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
@@ -1359,11 +1359,11 @@
 				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/VST/";
 				LIBRARY_STYLE = Bundle;
 				LLVM_LTO = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../JuceLibraryCode/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode $(SRCROOT)/../../JuceLibraryCode/modules $(SRCROOT)/../../JuceLibraryCode/modules/juce_audio_plugin_client";
-				OTHER_LDFLAGS = "-bundle -lSIDStep2";
-				PRODUCT_BUNDLE_IDENTIFIER = com.BAS.SIDStep2;
-				PRODUCT_NAME = "SIDStep2";
+				OTHER_LDFLAGS = "-bundle -lSIDestep";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BAS.SIDestep;
+				PRODUCT_NAME = "SIDestep";
 				USE_HEADERMAP = NO;
 				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
 				WRAPPER_EXTENSION = vst;
@@ -1373,7 +1373,7 @@
 		82A3050048EA7AD3A434FED4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -1416,10 +1416,10 @@
 				);
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				LLVM_LTO = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../JuceLibraryCode/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode $(SRCROOT)/../../JuceLibraryCode/modules $(SRCROOT)/../../JuceLibraryCode/modules/juce_audio_plugin_client";
-				PRODUCT_BUNDLE_IDENTIFIER = com.BAS.SIDStep2;
-				PRODUCT_NAME = "SIDStep2";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BAS.SIDestep;
+				PRODUCT_NAME = "SIDestep";
 				SKIP_INSTALL = YES;
 				USE_HEADERMAP = NO;
 				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
@@ -1467,7 +1467,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PRODUCT_NAME = "SIDStep2";
+				PRODUCT_NAME = "SIDestep";
 				SDKROOT = macosx;
 				WARNING_CFLAGS = "-Wreorder";
 				ZERO_LINK = NO;
@@ -1477,7 +1477,7 @@
 		E79700643A3AA694CC79B309 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				SDKROOT = macosx;
 			};
 			name = Release;

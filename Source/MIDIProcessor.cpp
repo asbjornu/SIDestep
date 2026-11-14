@@ -1,7 +1,7 @@
 #include "MIDIProcessor.h"
 
 
-#include "SIDStep2.h"
+#include "SIDestep.h"
 
 MidiProcessor::MidiProcessor (
         std::shared_ptr < EventDispatcher > dispatcher

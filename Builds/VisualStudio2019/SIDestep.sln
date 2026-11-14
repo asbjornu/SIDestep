@@ -1,12 +1,12 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2019
 
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SIDStep2 - VST", "SIDStep2_VST.vcxproj", "{8EC3423B-CCE9-B546-B529-8CB38F124713}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SIDestep - VST", "SIDestep_VST.vcxproj", "{8EC3423B-CCE9-B546-B529-8CB38F124713}"
 	ProjectSection(ProjectDependencies) = postProject
 		{8F143B3D-CE41-8156-82A3-B54C70B058BC} = {8F143B3D-CE41-8156-82A3-B54C70B058BC}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SIDStep2 - Shared Code", "SIDStep2_SharedCode.vcxproj", "{8F143B3D-CE41-8156-82A3-B54C70B058BC}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SIDestep - Shared Code", "SIDestep_SharedCode.vcxproj", "{8F143B3D-CE41-8156-82A3-B54C70B058BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

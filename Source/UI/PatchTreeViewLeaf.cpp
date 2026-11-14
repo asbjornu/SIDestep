@@ -1,10 +1,10 @@
 #include "PatchTreeViewLeaf.h"
-#include "../SIDStep2.h"
+#include "../SIDestep.h"
 
 PatchTreeViewLeaf::PatchTreeViewLeaf (
         std::shared_ptr < EventDispatcher > dispatcher
        ,
-        /*ReferenceCountedObjectPtr<SIDStep2> core, */String name
+        /*ReferenceCountedObjectPtr<SIDestep> core, */String name
       , String                                               id
         )
     : /*core(core), */

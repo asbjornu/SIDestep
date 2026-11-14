@@ -25,6 +25,9 @@ private:
     static auto
         GetFactoryOptions () -> Options;
 
+    static auto
+        GetLegacyOptions () -> Options;
+
     PropertiesFile                 factory;
     std::shared_ptr < XmlElement > merged;
 };

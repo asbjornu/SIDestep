@@ -2,7 +2,7 @@
 #pragma once
 #include <JuceHeader.h>
 #include "Listeners/ListenerInitializer.h"
-class SidStep2;
+class SIDestep;
 class ExportManager;
 class LiveMode;
 class PatchEditor;
@@ -11,21 +11,21 @@ class ParameterProcessor;
 class MidiProcessor;
 class SharedProperties;
 
-class Sidstep2AudioProcessor final : public AudioProcessor
+class SIDestepAudioProcessor final : public AudioProcessor
 {
 public:
-    Sidstep2AudioProcessor ();
+    SIDestepAudioProcessor ();
 
-    Sidstep2AudioProcessor (
-            Sidstep2AudioProcessor&& other
+    SIDestepAudioProcessor (
+            SIDestepAudioProcessor&& other
             ) = delete;
 
-    ~Sidstep2AudioProcessor () override;
+    ~SIDestepAudioProcessor () override;
 
     auto
         operator= (
-                Sidstep2AudioProcessor&& other
-                ) -> Sidstep2AudioProcessor& = delete;
+                SIDestepAudioProcessor&& other
+                ) -> SIDestepAudioProcessor& = delete;
 
     void
         prepareToPlay (
@@ -96,14 +96,14 @@ public:
                 ) override;
 
     auto
-        GetCore () const -> std::shared_ptr < SidStep2 >;
+        GetCore () const -> std::shared_ptr < SIDestep >;
 
 private:
     // Keeping this as a shared resource pointer because it is static during
     // runtime, so all instances can refer to the same property set.
     SharedResourcePointer < SharedProperties > properties;
     std::shared_ptr < EventDispatcher >        dispatcher;
-    std::shared_ptr < SidStep2 >               core;
+    std::shared_ptr < SIDestep >               core;
     std::shared_ptr < LiveMode >               liveMode;
     std::shared_ptr < PatchEditor >            patchEditor;
     std::shared_ptr < ParameterProcessor >     parameterProcessor;
@@ -112,5 +112,5 @@ private:
     //std::shared_ptr < ExportManager >          exportManager;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (
-                                                  Sidstep2AudioProcessor )
+                                                  SIDestepAudioProcessor )
 };

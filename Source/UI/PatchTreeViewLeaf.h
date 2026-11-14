@@ -3,7 +3,7 @@
 
 #include "../JuceLibraryCode/JuceHeader.h"
 #include "../Listeners/ListenerInitializer.h"
-class SidStep2;
+class SIDestep;
 
 class PatchTreeViewLeaf : public TreeViewItem
 {
@@ -11,7 +11,7 @@ public:
     PatchTreeViewLeaf (
             std::shared_ptr < EventDispatcher > dispatcher
            ,
-            /*ReferenceCountedObjectPtr<SIDStep2>core, */String name
+            /*ReferenceCountedObjectPtr<SIDestep>core, */String name
           , String                                              id
             );
 
@@ -40,7 +40,7 @@ public:
 
 private:
     std::shared_ptr < EventDispatcher > dispatcher;
-    //ReferenceCountedObjectPtr<SIDStep2> core;
+    //ReferenceCountedObjectPtr<SIDestep> core;
     String name;
     String id;
 };

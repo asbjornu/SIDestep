@@ -1,17 +1,17 @@
-#ifndef SIDSTEPLOOKANDFEEL_H_INCLUDED
-#define SIDSTEPLOOKANDFEEL_H_INCLUDED
+#ifndef SIDESTEPLOOKANDFEEL_H_INCLUDED
+#define SIDESTEPLOOKANDFEEL_H_INCLUDED
 
 #include "../../JuceLibraryCode/JuceHeader.h"
 
-class JUCE_API  SIDStepLookAndFeel:	public juce::LookAndFeel_V3 {
+class JUCE_API  SIDestepLookAndFeel:	public juce::LookAndFeel_V3 {
 public:
     static const char *bigCheck_png;
     static const int bigCheck_pngSize;
 	static const char *smallCheck_png;
 	static const int smallCheck_pngSize;
 
-    SIDStepLookAndFeel();
-    ~SIDStepLookAndFeel();
+    SIDestepLookAndFeel();
+    ~SIDestepLookAndFeel();
 
 	void drawRotarySlider(Graphics&, int x, int y, int width, int height,
 		float sliderPosProportional, float rotaryStartAngle, float rotaryEndAngle,
@@ -53,4 +53,4 @@ public:
 };
 
 
-#endif  // SIDSTEPLOOKANDFEEL_H_INCLUDED
+#endif  // SIDESTEPLOOKANDFEEL_H_INCLUDED

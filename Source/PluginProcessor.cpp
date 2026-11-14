@@ -4,7 +4,7 @@
 #include "MIDIProcessor.h"
 #include "ParameterProcessor.h"
 #include "PluginEditor.h"
-#include "SIDStep2.h"
+#include "SIDestep.h"
 #include "UI/LiveMode.h"
 #include "UI/PatchEditor.h"
 
@@ -14,7 +14,7 @@
 #include "Parameters/UnsignedPercentParameter.h"
 //#include "UI/ExportManager.h"
 
-Sidstep2AudioProcessor::Sidstep2AudioProcessor ()
+SIDestepAudioProcessor::SIDestepAudioProcessor ()
 {
     dispatcher = std::make_shared < EventDispatcher > ();
 
@@ -23,7 +23,7 @@ Sidstep2AudioProcessor::Sidstep2AudioProcessor ()
                                                     dispatcher );
     liveMode = std::make_shared < LiveMode > (
                                               dispatcher );
-    core = std::make_shared < SidStep2 > (
+    core = std::make_shared < SIDestep > (
                                           dispatcher );
     midiProcessor = std::make_shared < MidiProcessor > (
                                                         dispatcher );
@@ -105,7 +105,7 @@ Sidstep2AudioProcessor::Sidstep2AudioProcessor ()
     const auto load = properties -> GetPatches ();  // NOLINT(clang-diagnostic-unused-variable)
 }
 
-Sidstep2AudioProcessor::~Sidstep2AudioProcessor ()
+SIDestepAudioProcessor::~SIDestepAudioProcessor ()
 {
     core          = nullptr;
     liveMode      = nullptr;
@@ -117,10 +117,10 @@ Sidstep2AudioProcessor::~Sidstep2AudioProcessor ()
 
 // ReSharper disable once CppConstValueFunctionReturnType
 auto  // NOLINT(readability-const-return-type)
-    Sidstep2AudioProcessor::getName () const -> const String { return JucePlugin_Name; }
+    SIDestepAudioProcessor::getName () const -> const String { return JucePlugin_Name; }
 
 auto
-    Sidstep2AudioProcessor::acceptsMidi () const -> bool
+    SIDestepAudioProcessor::acceptsMidi () const -> bool
 {
 #if JucePlugin_WantsMidiInput
     return true;
@@ -130,7 +130,7 @@ auto
 }
 
 auto
-    Sidstep2AudioProcessor::producesMidi () const -> bool
+    SIDestepAudioProcessor::producesMidi () const -> bool
 {
 #if JucePlugin_ProducesMidiOutput
     return true;
@@ -140,37 +140,37 @@ auto
 }
 
 auto
-    Sidstep2AudioProcessor::getTailLengthSeconds () const -> double { return 0.0; }
+    SIDestepAudioProcessor::getTailLengthSeconds () const -> double { return 0.0; }
 
 auto
-    Sidstep2AudioProcessor::getNumPrograms () -> int
+    SIDestepAudioProcessor::getNumPrograms () -> int
 {
     return 128;
 }
 
 auto
-    Sidstep2AudioProcessor::getCurrentProgram () -> int { return 0; }
+    SIDestepAudioProcessor::getCurrentProgram () -> int { return 0; }
 
 void
-    Sidstep2AudioProcessor::setCurrentProgram (
+    SIDestepAudioProcessor::setCurrentProgram (
             int index
             ) {}
 
 // ReSharper disable once CppConstValueFunctionReturnType
 auto  // NOLINT(readability-const-return-type)
-    Sidstep2AudioProcessor::getProgramName (
+    SIDestepAudioProcessor::getProgramName (
             int index
             ) -> const String { return String (); }
 
 void
-    Sidstep2AudioProcessor::changeProgramName (
+    SIDestepAudioProcessor::changeProgramName (
             int index
           , const String& new_name
             ) {}
 
 
 void
-    Sidstep2AudioProcessor::prepareToPlay (
+    SIDestepAudioProcessor::prepareToPlay (
             const double sample_rate
           , int samples_per_block
             )
@@ -181,10 +181,10 @@ void
 }
 
 void
-    Sidstep2AudioProcessor::releaseResources () {}
+    SIDestepAudioProcessor::releaseResources () {}
 
 #ifndef JucePlugin_PreferredChannelConfigurations
-bool Sidstep2AudioProcessor::setPreferredBusArrangement (bool isInput, int bus, const AudioChannelSet& preferredSet)
+bool SIDestepAudioProcessor::setPreferredBusArrangement (bool isInput, int bus, const AudioChannelSet& preferredSet)
 {
     const int numChannels = preferredSet.size();
 
@@ -207,7 +207,7 @@ bool Sidstep2AudioProcessor::setPreferredBusArrangement (bool isInput, int bus, 
 #endif
 
 void
-    Sidstep2AudioProcessor::processBlock (
+    SIDestepAudioProcessor::processBlock (
             AudioSampleBuffer& buffer
           , MidiBuffer&        midi_messages
             )
@@ -229,15 +229,15 @@ void
 
 
 auto
-    Sidstep2AudioProcessor::hasEditor () const -> bool
+    SIDestepAudioProcessor::hasEditor () const -> bool
 {
     return true; 
 }
 
 auto
-    Sidstep2AudioProcessor::createEditor () -> AudioProcessorEditor*
+    SIDestepAudioProcessor::createEditor () -> AudioProcessorEditor*
 {
-    auto ed = new Sidstep2AudioProcessorEditor (
+    auto ed = new SIDestepAudioProcessorEditor (
                                                 *this );
     ed -> addAndMakeVisible (
                              *liveMode );
@@ -250,7 +250,7 @@ auto
 
 
 void
-    Sidstep2AudioProcessor::getStateInformation (
+    SIDestepAudioProcessor::getStateInformation (
             MemoryBlock& dest_data
             )
 {
@@ -259,7 +259,7 @@ void
 }
 
 void
-    Sidstep2AudioProcessor::setStateInformation (
+    SIDestepAudioProcessor::setStateInformation (
             const void* data
           , const int   size_in_bytes
             )
@@ -270,8 +270,8 @@ void
 }
 
 auto
-    Sidstep2AudioProcessor::GetCore () const -> std::shared_ptr < SidStep2 > { return core; }
+    SIDestepAudioProcessor::GetCore () const -> std::shared_ptr < SIDestep > { return core; }
 
 
 // ReSharper disable once CppInconsistentNaming
-auto JUCE_CALLTYPE createPluginFilter () -> AudioProcessor* { return new Sidstep2AudioProcessor (); }
+auto JUCE_CALLTYPE createPluginFilter () -> AudioProcessor* { return new SIDestepAudioProcessor (); }
