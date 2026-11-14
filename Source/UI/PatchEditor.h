@@ -25,7 +25,7 @@
 
 
 // ReSharper disable once CppInconsistentNaming
-class SIDStepLookAndFeel;
+class SIDestepLookAndFeel;
 class WavetableView;
 class NoteTableView;
 class PulseTableView;
@@ -151,7 +151,7 @@ public:
 private:
     //[UserVariables]   -- You can add your own custom variables in this section.
     std::shared_ptr < EventDispatcher >    dispatcher;
-    std::shared_ptr < SIDStepLookAndFeel > look;
+    std::shared_ptr < SIDestepLookAndFeel > look;
     std::shared_ptr < WavetableView >      wavetable;
     std::shared_ptr < NoteTableView >      noteTable;
     std::shared_ptr < PulseTableView >     pulseTable;

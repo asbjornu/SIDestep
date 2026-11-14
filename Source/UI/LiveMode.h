@@ -24,7 +24,7 @@
 #include "../Listeners/ListenerInitializer.h"
 class Patches;
 // ReSharper disable once CppInconsistentNaming
-class SIDStepLookAndFeel;
+class SIDestepLookAndFeel;
 //[/Headers]
 
 #include "PatchSelector.h"
@@ -340,7 +340,7 @@ public:
 private:
     //[UserVariables]   -- You can add your own custom variables in this section.
     std::shared_ptr < EventDispatcher >    dispatcher;
-    std::shared_ptr < SIDStepLookAndFeel > look;
+    std::shared_ptr < SIDestepLookAndFeel > look;
     std::shared_ptr < Patches >            patches;
     bool                                   armed;
     bool                                   quarterNoteTicked {};

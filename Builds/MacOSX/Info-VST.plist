@@ -8,11 +8,11 @@
     <key>CFBundleIconFile</key>
     <string></string>
     <key>CFBundleIdentifier</key>
-    <string>com.BAS.SIDStep2</string>
+    <string>com.BAS.SIDestep</string>
     <key>CFBundleName</key>
-    <string>SIDStep2</string>
+    <string>SIDestep</string>
     <key>CFBundleDisplayName</key>
-    <string>SIDStep2</string>
+    <string>SIDestep</string>
     <key>CFBundlePackageType</key>
     <string>BNDL</string>
     <key>CFBundleSignature</key>

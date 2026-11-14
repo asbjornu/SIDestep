@@ -17,7 +17,7 @@ class Bank;
 class Recorder;
 
 
-class SidStep2 final
+class SIDestep final
         : public ReferenceCountedObject
         , public SampleRateChanged
         , public BankProgramChanged
@@ -35,20 +35,20 @@ class SidStep2 final
 {
 public:
     explicit
-        SidStep2 (
+        SIDestep (
                 const std::shared_ptr < EventDispatcher >& dispatcher
                 );
 
-    ~SidStep2 () override;
+    ~SIDestep () override;
 
-    SidStep2 (
-            SidStep2&& other
+    SIDestep (
+            SIDestep&& other
             ) = delete;
 
     auto
         operator= (
-                SidStep2&& other
-                ) -> SidStep2& = delete;
+                SIDestep&& other
+                ) -> SIDestep& = delete;
 
     void
         GetStateInformation (
@@ -196,5 +196,5 @@ private:
     };
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (
-                                                  SidStep2 )
+                                                  SIDestep )
 };

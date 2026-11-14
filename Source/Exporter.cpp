@@ -111,7 +111,7 @@ void
             ) const
 {
     FileChooser file_browser (
-                              "Save SIDStep2 Export Data" );
+                              "Save SIDestep Export Data" );
     if ( file_browser . browseForFileToSave (
                                              true ) )
     {

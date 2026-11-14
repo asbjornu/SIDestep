@@ -1,6 +1,6 @@
 name: Build
 
-# This workflow compiles the SIDStep2 VST for every supported platform and
+# This workflow compiles the SIDestep VST for every supported platform and
 # uploads the resulting binaries as downloadable build artifacts.
 #
 # It is intentionally reusable (see `workflow_call` below): a future release
@@ -32,12 +32,12 @@ jobs:
         include:
           - name: macOS
             os: macos-latest
-            artifact: SIDStep2-macOS
+            artifact: SIDestep-macOS
           - name: Windows
             # Pinned: `windows-latest` now maps to VS 2026 (v145) while this
             # project is a VS 2019 (v142) solution. windows-2022 keeps v142.
             os: windows-2022
-            artifact: SIDStep2-Windows
+            artifact: SIDestep-Windows
 
     steps:
       - name: Check out source
@@ -93,8 +93,8 @@ jobs:
           # DEPLOYMENT_LOCATION=NO and a scratch CONFIGURATION_BUILD_DIR are
           # required to avoid an Xcode dependency cycle in newer Xcode.
           xcodebuild \
-            -project Builds/MacOSX/SIDStep2.xcodeproj \
-            -scheme "SIDStep2 - VST" \
+            -project Builds/MacOSX/SIDestep.xcodeproj \
+            -scheme "SIDestep - VST" \
             -configuration Release \
             -derivedDataPath "$RUNNER_TEMP/derived" \
             CONFIGURATION_BUILD_DIR="$RUNNER_TEMP/build/Release" \
@@ -104,7 +104,7 @@ jobs:
             build
 
           mkdir -p "$RUNNER_TEMP/artifact"
-          cp -R "$RUNNER_TEMP/build/Release/SIDStep2.vst" "$RUNNER_TEMP/artifact/"
+          cp -R "$RUNNER_TEMP/build/Release/SIDestep.vst" "$RUNNER_TEMP/artifact/"
 
       - name: Set up MSBuild
         if: runner.os == 'Windows'
@@ -123,13 +123,13 @@ jobs:
           New-Item -ItemType Directory -Force -Path 'C:\My Documents\VSTs\64b\Shared Code', 'C:\My Documents\VSTs\64b\VST' | Out-Null
           Copy-Item -Recurse -Force '.deps\vst2-sdk\*' 'C:\VST3 SDK'
 
-          msbuild Builds\VisualStudio2019\SIDStep2.sln `
+          msbuild Builds\VisualStudio2019\SIDestep.sln `
             /m `
             /p:Configuration=Release `
             /p:Platform=x64
 
           New-Item -ItemType Directory -Force -Path "$env:RUNNER_TEMP\artifact" | Out-Null
-          Copy-Item 'C:\My Documents\VSTs\64b\VST\SIDStep2.dll' "$env:RUNNER_TEMP\artifact\"
+          Copy-Item 'C:\My Documents\VSTs\64b\VST\SIDestep.dll' "$env:RUNNER_TEMP\artifact\"
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v7

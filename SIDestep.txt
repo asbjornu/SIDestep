@@ -1,6 +1,10 @@
+> **Note:** This document was written by deathy for the original SIDStep2
+> alpha and is kept here for reference. SIDestep is a fork of SIDStep2; see
+> the [README](README.md) for details and attribution.
+
 Howdy, all, deathy here!
 
-Welcome to the next alpha phase for SIDStep2.  This is a VSTi that uses resid 
+Welcome to the next alpha phase for SIDestep.  This is a VSTi that uses resid
 to emulate the SID chip in any DAW you wish to use, but here is the important 
 part - when you are done, it will export your song so that it can be loaded 
 onto a real C64 and used in games or demos!
@@ -28,7 +32,7 @@ OK, so... how to set it up:
 You will use 4 tracks/channels... One to contain the actual VST, and the other 
 3 to be each of the 3 voice channels of the SID.  All of those channels need to
 be MIDI, if your DAW differentiates.  The 3 voice channels must direct their 
-output into the SIDStep2 VST on its channel, and aimed at MIDI channels 1 
+output into the SIDestep VST on its channel, and aimed at MIDI channels 1
 through 3, matching the voice number.  I will be trying to release template 
 files and/or blank pre-made projects for different DAWs aas I can to help make 
 this faster and easier.

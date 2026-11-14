@@ -9,24 +9,24 @@
 
 class LiveMode;
 
-class Sidstep2AudioProcessorEditor final : public AudioProcessorEditor
+class SIDestepAudioProcessorEditor final : public AudioProcessorEditor
 {
 public:
     explicit
-        Sidstep2AudioProcessorEditor (
-                Sidstep2AudioProcessor& processor
+        SIDestepAudioProcessorEditor (
+                SIDestepAudioProcessor& processor
                 );
 
-    Sidstep2AudioProcessorEditor (
-            Sidstep2AudioProcessorEditor&& other
+    SIDestepAudioProcessorEditor (
+            SIDestepAudioProcessorEditor&& other
             ) = delete;
 
-    ~Sidstep2AudioProcessorEditor () override = default;
+    ~SIDestepAudioProcessorEditor () override = default;
 
     auto
         operator= (
-                Sidstep2AudioProcessorEditor&& other
-                ) -> Sidstep2AudioProcessorEditor& = delete;
+                SIDestepAudioProcessorEditor&& other
+                ) -> SIDestepAudioProcessorEditor& = delete;
 
     void
         paint (
@@ -40,7 +40,7 @@ private:
     static const int EDITOR_WIDTH  = 1024;
     static const int EDITOR_HEIGHT = 576;
 
-    Sidstep2AudioProcessor& processor;
+    SIDestepAudioProcessor& processor;
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (
-                                                  Sidstep2AudioProcessorEditor )
+                                                  SIDestepAudioProcessorEditor )
 };

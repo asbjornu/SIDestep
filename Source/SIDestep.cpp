@@ -1,4 +1,4 @@
-#include "SIDStep2.h"
+#include "SIDestep.h"
 
 #include <array>
 
@@ -13,7 +13,7 @@
 
 #include "Programs/Bank.h"
 
-SidStep2::SidStep2 (
+SIDestep::SIDestep (
         const std::shared_ptr < EventDispatcher >& dispatcher
         )
     :
@@ -60,7 +60,7 @@ SidStep2::SidStep2 (
     armed               = recording = false;
 }
 
-SidStep2::~SidStep2 ()
+SIDestep::~SIDestep ()
 {
     dispatcher -> sampleRateChangedListeners -> remove (
                                                         this );
@@ -98,7 +98,7 @@ SidStep2::~SidStep2 ()
 }
 
 void
-    SidStep2::Generate (
+    SIDestep::Generate (
             MidiBuffer&                         midi_messages
           , AudioSampleBuffer&                  buffer
           , AudioPlayHead::CurrentPositionInfo& position_info
@@ -311,7 +311,7 @@ void
 }
 
 void
-    SidStep2::onLiveTitleChanged (
+    SIDestep::onLiveTitleChanged (
             const String value
             )
 {
@@ -320,7 +320,7 @@ void
 }
 
 void
-    SidStep2::onLiveArtistChanged (
+    SIDestep::onLiveArtistChanged (
             const String value
             )
 {
@@ -329,7 +329,7 @@ void
 }
 
 void
-    SidStep2::FirePatchListChanged () const // NOLINT(readability-convert-member-functions-to-static)
+    SIDestep::FirePatchListChanged () const // NOLINT(readability-convert-member-functions-to-static)
 {
     Array < String > value;
     for ( auto p : programs )
@@ -344,7 +344,7 @@ void
 }
 
 void
-    SidStep2::GetStateInformation (
+    SIDestep::GetStateInformation (
             MemoryBlock& dest_data
             ) const
 {
@@ -452,7 +452,7 @@ void
 }
 
 void
-    SidStep2::ReadState20220714 (
+    SIDestep::ReadState20220714 (
             MemoryInputStream& stream
             )
 {
@@ -496,7 +496,7 @@ void
 }
 
 void
-    SidStep2::ReadState20200708 (
+    SIDestep::ReadState20200708 (
             MemoryInputStream& stream
             )
 {
@@ -586,7 +586,7 @@ void
 }
 
 void
-    SidStep2::SetStateInformation (
+    SIDestep::SetStateInformation (
             const void* data
           , const int   size_in_bytes
             )
@@ -643,7 +643,7 @@ void
 }
 
 void
-    SidStep2::onSampleRateChanged (
+    SIDestep::onSampleRateChanged (
             const double new_rate
             )
 {
@@ -672,7 +672,7 @@ void
 // * This SHOULDN'T need to do anything just because a program has been SaveAs'ed, as the programs themselves tend to 
 //	 handle that.
 void
-    SidStep2::onBankProgramChanged (
+    SIDestep::onBankProgramChanged (
             const String                                   old_id
           , const ReferenceCountedObjectPtr < SidProgram > program
             )
@@ -783,18 +783,18 @@ void
 }
 
 void
-    SidStep2::onLivePatchEditorModeClicked () { live = false; }
+    SIDestep::onLivePatchEditorModeClicked () { live = false; }
 
 void
-    SidStep2::onPatchEditorLiveModeClicked () { live = true; }
+    SIDestep::onPatchEditorLiveModeClicked () { live = true; }
 
 void
-    SidStep2::onLivePatchListMode (
+    SIDestep::onLivePatchListMode (
             const int value
             ) { patchListMode = value; }
 
 void
-    SidStep2::onLivePatchListSelectedIndexChanged (
+    SIDestep::onLivePatchListSelectedIndexChanged (
             const int value
             )
 {
@@ -805,7 +805,7 @@ void
 }
 
 void
-    SidStep2::onLiveRemovePatchClicked ()
+    SIDestep::onLiveRemovePatchClicked ()
 {
     if ( live )
     {
@@ -826,7 +826,7 @@ void
 }
 
 void
-    SidStep2::onLiveExportArmed ()
+    SIDestep::onLiveExportArmed ()
 {
     armed    = true;
     recorder = nullptr;
@@ -836,14 +836,14 @@ void
 }
 
 void
-    SidStep2::onLiveDoneExporting ()
+    SIDestep::onLiveDoneExporting ()
 {
     armed = false;
     recorder -> Stop ();
 }
 
 void
-    SidStep2::Frame (
+    SIDestep::Frame (
             const unsigned frame
           , const bool     playing
             )
@@ -868,7 +868,7 @@ void
 }
 
 void
-    SidStep2::ProcessVoice (
+    SIDestep::ProcessVoice (
             const int v
             ) const
 { 

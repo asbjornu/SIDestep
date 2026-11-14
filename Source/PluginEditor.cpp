@@ -4,8 +4,8 @@
 #include "PluginEditor.h"
 
 
-Sidstep2AudioProcessorEditor::Sidstep2AudioProcessorEditor (
-        Sidstep2AudioProcessor& processor
+SIDestepAudioProcessorEditor::SIDestepAudioProcessorEditor (
+        SIDestepAudioProcessor& processor
         )
     :
     AudioProcessorEditor (
@@ -19,9 +19,9 @@ Sidstep2AudioProcessorEditor::Sidstep2AudioProcessorEditor (
 }
 
 void
-    Sidstep2AudioProcessorEditor::paint (
+    SIDestepAudioProcessorEditor::paint (
             Graphics& g
             ) {}
 
 void
-    Sidstep2AudioProcessorEditor::resized () {}
+    SIDestepAudioProcessorEditor::resized () {}

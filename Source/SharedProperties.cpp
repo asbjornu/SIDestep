@@ -22,15 +22,26 @@ void
     SharedProperties::InitializeProperties ()
 {
     ScopedPointer < XmlElement > patches_element = GetPatches ();
+    bool needsSave = false;
+
+    if ( patches_element == nullptr )
+    {
+        // Import the patch bank from the original SIDStep2 release so users
+        // keep their presets after moving to SIDestep.
+        PropertiesFile legacy ( GetLegacyOptions () );
+        patches_element = legacy . getXmlValue (
+                                                "patches" );
+        needsSave = patches_element != nullptr;
+    }
+
     if ( patches_element == nullptr )
     {
         // Once some presets are written, then they'll be embedded and initially written out here
         patches_element = new XmlElement (
                                           "patches" );
-        setValue (
-                  "patches"
-                , patches_element );
+        needsSave = true;
     }
+
     if ( patches_element -> getNumChildElements () == 0 )
     {
         patches_element -> addChildElement (
@@ -55,6 +66,11 @@ void
                                             new XmlElement (
                                                             "misc" ) );
     }
+
+    if ( needsSave )
+        setValue (
+                  "patches"
+                , patches_element );
 }
 
 void
@@ -112,7 +128,7 @@ auto
     SharedProperties::GetOptions () -> Options
 {
     Options props;
-    props . applicationName  = "SIDStep 2";
+    props . applicationName  = "SIDestep";
     props . filenameSuffix   = ".bank";
     props . commonToAllUsers = false;
     return props;
@@ -122,8 +138,18 @@ auto
     SharedProperties::GetFactoryOptions () -> Options
 {
     Options props;
-    props . applicationName  = "SIDStep 2";
+    props . applicationName  = "SIDestep";
     props . filenameSuffix   = ".factory";
+    props . commonToAllUsers = false;
+    return props;
+}
+
+auto
+    SharedProperties::GetLegacyOptions () -> Options
+{
+    Options props;
+    props . applicationName  = "SIDStep 2";
+    props . filenameSuffix   = ".bank";
     props . commonToAllUsers = false;
     return props;
 }

@@ -5,12 +5,12 @@
 
 #include "Defines.h"
 #include "Note.h"
-#include "SIDStep2.h"
+#include "SIDestep.h"
 
 #include "Listeners/ListenerInitializer.h"
 
 class SID;
-class SidStep2;
+class SIDestep;
 
 class SidRegisters final
         : public ReferenceCountedObject
@@ -189,7 +189,7 @@ private:
     static constexpr double octave                    = 12.0;
     static constexpr double note_middle_offset        = 69.0;
     static constexpr double binary_bit_13             = 4096.0;
-    friend class SidStep2;
+    friend class SIDestep;
 
     void
         SetFrame (

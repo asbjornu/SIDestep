@@ -15,9 +15,9 @@ BEGIN
   BEGIN
     BLOCK "040904E4"
     BEGIN
-      VALUE "FileDescription",  "SIDStep2\0"
+      VALUE "FileDescription",  "SIDestep\0"
       VALUE "FileVersion",  "1.0.0\0"
-      VALUE "ProductName",  "SIDStep2\0"
+      VALUE "ProductName",  "SIDestep\0"
       VALUE "ProductVersion",  "1.0.0\0"
     END
   END

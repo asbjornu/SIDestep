@@ -38,11 +38,11 @@
     <TargetExt>.lib</TargetExt>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\My Documents\VSTs\64b\Shared Code\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\Shared Code\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">SIDStep2</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">SIDestep</TargetName>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\My Documents\VSTs\64b\Shared Code\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\Shared Code\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">SIDStep2</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">SIDestep</TargetName>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -63,7 +63,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <AssemblerListingLocation>$(IntDir)\</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)\</ObjectFileName>
-      <ProgramDataBaseFileName>$(IntDir)\SIDStep2.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(IntDir)\SIDestep.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level4</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
@@ -73,17 +73,17 @@
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
     <Link>
-      <OutputFile>$(OutDir)\SIDStep2.lib</OutputFile>
+      <OutputFile>$(OutDir)\SIDestep.lib</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <IgnoreSpecificDefaultLibraries>libcmt.lib; msvcrt.lib;;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(IntDir)\SIDStep2.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>$(IntDir)\SIDestep.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <LargeAddressAware>true</LargeAddressAware>
     </Link>
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <OutputFile>$(IntDir)\SIDStep2.bsc</OutputFile>
+      <OutputFile>$(IntDir)\SIDestep.bsc</OutputFile>
     </Bscmake>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -103,7 +103,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <AssemblerListingLocation>$(IntDir)\</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)\</ObjectFileName>
-      <ProgramDataBaseFileName>$(IntDir)\SIDStep2.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(IntDir)\SIDestep.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level4</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
@@ -113,11 +113,11 @@
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
     <Link>
-      <OutputFile>$(OutDir)\SIDStep2.lib</OutputFile>
+      <OutputFile>$(OutDir)\SIDestep.lib</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>false</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(IntDir)\SIDStep2.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>$(IntDir)\SIDestep.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -126,7 +126,7 @@
     </Link>
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <OutputFile>$(IntDir)\SIDStep2.bsc</OutputFile>
+      <OutputFile>$(IntDir)\SIDestep.bsc</OutputFile>
     </Bscmake>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -194,13 +194,13 @@
     <ClCompile Include="..\..\Source\UI\PulseTableText.cpp" />
     <ClCompile Include="..\..\Source\UI\PulseTableView.cpp" />
     <ClCompile Include="..\..\Source\UI\SavePatchAsDialog.cpp" />
-    <ClCompile Include="..\..\Source\UI\SIDStepLookAndFeel.cpp" />
+    <ClCompile Include="..\..\Source\UI\SIDestepLookAndFeel.cpp" />
     <ClCompile Include="..\..\Source\UI\WaveformView.cpp" />
     <ClCompile Include="..\..\Source\UI\WavetableCommandRow.cpp" />
     <ClCompile Include="..\..\Source\UI\WavetableRow.cpp" />
     <ClCompile Include="..\..\Source\UI\WavetableText.cpp" />
     <ClCompile Include="..\..\Source\UI\WavetableView.cpp" />
-    <ClCompile Include="..\..\Source\SIDStep2.cpp" />
+    <ClCompile Include="..\..\Source\SIDestep.cpp" />
     <ClCompile Include="..\..\Source\PluginProcessor.cpp" />
     <ClCompile Include="..\..\Source\PluginEditor.cpp" />
     <ClCompile Include="..\..\JuceLibraryCode\modules\juce_audio_basics\buffers\juce_AudioChannelSet.cpp">
@@ -2343,14 +2343,14 @@
     <ClInclude Include="..\..\Source\UI\PulseTableText.h" />
     <ClInclude Include="..\..\Source\UI\PulseTableView.h" />
     <ClInclude Include="..\..\Source\UI\SavePatchAsDialog.h" />
-    <ClInclude Include="..\..\Source\UI\SIDStepLookAndFeel.h" />
+    <ClInclude Include="..\..\Source\UI\SIDestepLookAndFeel.h" />
     <ClInclude Include="..\..\Source\UI\WaveformView.h" />
     <ClInclude Include="..\..\Source\UI\WavetableCommandRow.h" />
     <ClInclude Include="..\..\Source\UI\WavetableRow.h" />
     <ClInclude Include="..\..\Source\UI\WavetableText.h" />
     <ClInclude Include="..\..\Source\UI\WavetableView.h" />
     <ClInclude Include="..\..\Source\Note.h" />
-    <ClInclude Include="..\..\Source\SIDStep2.h" />
+    <ClInclude Include="..\..\Source\SIDestep.h" />
     <ClInclude Include="..\..\Source\PluginProcessor.h" />
     <ClInclude Include="..\..\Source\PluginEditor.h" />
     <ClInclude Include="..\..\JuceLibraryCode\modules\juce_audio_basics\audio_play_head\juce_AudioPlayHead.h" />

@@ -1,11 +1,11 @@
 #include "../../JuceLibraryCode/JuceHeader.h"
-#include "SIDStepLookAndFeel.h"
+#include "SIDestepLookAndFeel.h"
 
-SIDStepLookAndFeel::SIDStepLookAndFeel() {}
+SIDestepLookAndFeel::SIDestepLookAndFeel() {}
 
-SIDStepLookAndFeel::~SIDStepLookAndFeel() {}
+SIDestepLookAndFeel::~SIDestepLookAndFeel() {}
 
-void SIDStepLookAndFeel::drawRotarySlider(Graphics &g, int x, int y, int width, int height, float sliderPos, float rotaryStartAngle,
+void SIDestepLookAndFeel::drawRotarySlider(Graphics &g, int x, int y, int width, int height, float sliderPos, float rotaryStartAngle,
                                           float rotaryEndAngle, Slider &) {
 
 	Colour black(0xff000000);
@@ -40,7 +40,7 @@ void SIDStepLookAndFeel::drawRotarySlider(Graphics &g, int x, int y, int width, 
 	g.fillPath(p, AffineTransform::rotation(angle).translated(centerX, centerY));
 }
 
-void SIDStepLookAndFeel::drawToggleButton(Graphics &g, ToggleButton &button, bool, bool) {
+void SIDestepLookAndFeel::drawToggleButton(Graphics &g, ToggleButton &button, bool, bool) {
 
 	if (!button.getToggleState()) return;
 
@@ -54,7 +54,7 @@ void SIDStepLookAndFeel::drawToggleButton(Graphics &g, ToggleButton &button, boo
 	            image.getHeight());
 }
 
-void SIDStepLookAndFeel::drawScrollbarButton(Graphics &g, ScrollBar &, int width, int height, int buttonDirection,
+void SIDestepLookAndFeel::drawScrollbarButton(Graphics &g, ScrollBar &, int width, int height, int buttonDirection,
                                              bool, bool, bool) {
 
 	Colour ltBlue(0xff5090d0);
@@ -74,7 +74,7 @@ void SIDStepLookAndFeel::drawScrollbarButton(Graphics &g, ScrollBar &, int width
 	g.fillPath(p);
 }
 
-void SIDStepLookAndFeel::drawScrollbar(Graphics &g, ScrollBar &, int x, int, int width, int,
+void SIDestepLookAndFeel::drawScrollbar(Graphics &g, ScrollBar &, int x, int, int width, int,
                                        bool isScrollbarVertical, int thumbStartPosition, int thumbSize, bool, bool) {
 
 	Colour ltBlue(0xff5090d0);
@@ -85,19 +85,19 @@ void SIDStepLookAndFeel::drawScrollbar(Graphics &g, ScrollBar &, int x, int, int
 	}
 }
 
-bool SIDStepLookAndFeel::areScrollbarButtonsVisible() {
+bool SIDestepLookAndFeel::areScrollbarButtonsVisible() {
 	return true;
 }
 
-int SIDStepLookAndFeel::getScrollbarButtonSize(ScrollBar &scrollbar) {
+int SIDestepLookAndFeel::getScrollbarButtonSize(ScrollBar &scrollbar) {
 	return jmin(scrollbar.getWidth(), scrollbar.getHeight());
 }
 
-juce::Font SIDStepLookAndFeel::getComboBoxFont(juce::ComboBox&) {
+juce::Font SIDestepLookAndFeel::getComboBoxFont(juce::ComboBox&) {
 	return Font("C64 Pro", 14.00f, Font::plain);
 }
 
-void SIDStepLookAndFeel::drawComboBox(Graphics &g, int width, int height, bool, int buttonX, int buttonY, 
+void SIDestepLookAndFeel::drawComboBox(Graphics &g, int width, int height, bool, int buttonX, int buttonY,
 									  int buttonW, int buttonH, ComboBox &) {
 	
 	Colour blue(0xff181090);
@@ -125,24 +125,24 @@ void SIDStepLookAndFeel::drawComboBox(Graphics &g, int width, int height, bool, 
 	g.fillPath(p);
 }
 
-void SIDStepLookAndFeel::positionComboBoxText(ComboBox &box, Label &label) {
+void SIDestepLookAndFeel::positionComboBoxText(ComboBox &box, Label &label) {
 	label.setFont(getComboBoxFont(box));
 	label.setJustificationType(Justification::centredLeft);
 	label.setBounds(8, 0, box.getWidth() - 32, box.getHeight());
 }
 
-Font SIDStepLookAndFeel::getPopupMenuFont() {
+Font SIDestepLookAndFeel::getPopupMenuFont() {
 	return Font("C64 Pro", 14.00f, Font::plain);
 }
 
-void SIDStepLookAndFeel::drawPopupMenuBackground(Graphics &g, int width, int height) {
+void SIDestepLookAndFeel::drawPopupMenuBackground(Graphics &g, int width, int height) {
 	Colour ltBlue(0xff5090d0);
 
 	g.setColour(ltBlue);
 	g.fillRect(0, 0, width, height);
 }
 
-void SIDStepLookAndFeel::drawPopupMenuItem(Graphics &g, const Rectangle<int> &area, bool isSeparator, bool isActive, 
+void SIDestepLookAndFeel::drawPopupMenuItem(Graphics &g, const Rectangle<int> &area, bool isSeparator, bool isActive,
 	bool isHighlighted, bool isTicked, bool hasSubMenu, const String &text, const String &shortcutKeyText, 
 	const Drawable *icon, const Colour *) {
 
@@ -241,7 +241,7 @@ void SIDStepLookAndFeel::drawPopupMenuItem(Graphics &g, const Rectangle<int> &ar
 	}
 }
 
-void SIDStepLookAndFeel::drawTreeviewPlusMinusBox(Graphics &g, const Rectangle<float> &area, Colour backgroundColour, 
+void SIDestepLookAndFeel::drawTreeviewPlusMinusBox(Graphics &g, const Rectangle<float> &area, Colour backgroundColour,
 	bool isItemOpen, bool) {
 	
 	Colour ltBlue(0xff5090d0);
@@ -302,8 +302,8 @@ static const unsigned char resource_LiveMode_bigCheck_png[] = {137,80,78,71,13,1
 	185,220,174,69,5,165,19,116,165,127,12,146,126,143,145,149,70,159,119,222,112,231,100,255,161,253,40,231,247,159,141,50,189,161,191,209,80,115,21,140,5,98,240,253,19,160,21,168,84,168,247,18,195,140,55,
 	246,252,116,86,224,122,118,152,244,63,182,79,196,73,153,18,101,111,0,0,0,0,73,69,78,68,174,66,96,130,0,0};
 
-const char *SIDStepLookAndFeel::bigCheck_png = reinterpret_cast<const char*>(resource_LiveMode_bigCheck_png);
-const int SIDStepLookAndFeel::bigCheck_pngSize = 2060;
+const char *SIDestepLookAndFeel::bigCheck_png = reinterpret_cast<const char*>(resource_LiveMode_bigCheck_png);
+const int SIDestepLookAndFeel::bigCheck_pngSize = 2060;
 
 static const unsigned char resource_WavetableRow_smallCheck_png[] = { 137,80,78,71,13,10,26,10,0,0,0,13,73,72,68,82,0,0,0,12,0,0,0,13,8,6,0,0,0,157,41,143,66,0,0,0,4,115,66,73,84,8,8,8,8,124,8,100,136,
 0,0,0,9,112,72,89,115,0,0,13,215,0,0,13,215,1,66,40,155,120,0,0,0,25,116,69,88,116,83,111,102,116,119,97,114,101,0,119,119,119,46,105,110,107,115,99,97,112,101,46,111,114,103,155,238,60,26,0,0,1,163,73,
@@ -316,5 +316,5 @@ static const unsigned char resource_WavetableRow_smallCheck_png[] = { 137,80,78,
 149,122,165,118,127,173,124,123,118,119,71,5,122,212,205,22,127,159,139,26,172,79,21,112,179,27,19,121,207,125,20,246,65,165,12,243,237,143,201,188,174,110,86,217,94,223,98,233,253,92,205,64,95,129,76,
 45,76,16,0,199,30,236,23,173,251,0,95,144,59,57,183,247,117,24,12,240,11,188,142,153,119,91,153,76,51,0,0,0,0,73,69,78,68,174,66,96,130,0,0};
 
-const char* SIDStepLookAndFeel::smallCheck_png = reinterpret_cast<const char*>(resource_WavetableRow_smallCheck_png);
-const int SIDStepLookAndFeel::smallCheck_pngSize = 550;
+const char* SIDestepLookAndFeel::smallCheck_png = reinterpret_cast<const char*>(resource_WavetableRow_smallCheck_png);
+const int SIDestepLookAndFeel::smallCheck_pngSize = 550;
